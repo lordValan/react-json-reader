@@ -1,11 +1,9 @@
 import React from 'react';
 
+import MainPage from './components/pages/MainPage';
+
 import 'normalize.css/normalize.css';
 
-export default class App extends React.PureComponent {
-    render() {
-        return (
-            <p>Hello</p>
-        );
-    }
+export default function App() {
+    return <MainPage />;
 }
