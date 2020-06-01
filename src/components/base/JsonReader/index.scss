@@ -1,0 +1,21 @@
+.EmptyMessage {
+    margin: 0;
+}
+
+.JsonReader {
+    &__Item {
+        &__Key {
+            font-weight: bold;
+
+            &::after {
+                content: ': ';
+            }
+        }
+
+        &__Value {
+            .JsonReader {
+                padding-left: 20px;
+            }
+        }
+    }
+}
